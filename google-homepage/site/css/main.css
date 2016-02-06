@@ -1,64 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Arimo);
+body {
+  font-family: 'Arimo', sans-serif; }
+
 html, body {
   margin: 0;
   padding: 0; }
 
 .navbar {
-  float: right; }
+  float: right;
+  margin: 10px; }
   .navbar li {
     list-style-type: none;
-    display: inline-block; }
+    display: inline-block;
+    font-size: 14px; }
+    .navbar li img {
+      vertical-align: middle;
+      width: 20px;
+      height: 20px; }
     .navbar li a {
       padding: 10px;
       display: block;
       text-decoration: none;
+      font-size: 14px;
       color: #222; }
+      .navbar li a:hover {
+        text-decoration: underline; }
 
 .centerpage {
   clear: both;
   margin: auto;
   position: relative;
-  top: 150px;
+  top: 140px;
   text-align: center; }
   .centerpage img {
     display: block;
     margin: auto; }
   .centerpage .inputbox {
-    width: 550px;
-    height: 35px;
-    border: 2px solid #F4F4F4; }
+    padding: 10px;
+    width: 575px;
+    height: 40px;
+    border: 1px solid #e9e1e1; }
+    .centerpage .inputbox:hover {
+      border-color: #afaeae; }
+    .centerpage .inputbox:focus {
+      border-color: #4D90FE; }
   .centerpage button {
-    width: 150px;
-    height: 30px;
+    width: 140px;
+    height: 35px;
+    margin: 5px;
+    font-size: 14px;
     color: #666666;
-    font-weight: 700;
-    background-color: #F4F4F4;
-    border: 1px solid #F4F4F4; }
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2; }
+    .centerpage button:hover {
+      color: #000;
+      border: .2px solid #d5cdcd;
+      box-shadow: 0 1px 5px #d5cdcd; }
 
 .footer {
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
-  color: #757575;
-  background-color: #F4F4F4; }
+  background-color: #F4F4F4;
+  border-top: 1px solid #E4E4E4; }
   .footer .footernav {
     float: left; }
     .footer .footernav li {
       list-style-type: none;
       display: inline-block;
-      padding: 5px; }
+      font-size: 14px;
+      padding: 5px 10px; }
       .footer .footernav li a {
         padding: 10px;
         display: block;
         text-decoration: none;
-        color: #222; }
+        color: #736c6c; }
+        .footer .footernav li a:hover {
+          text-decoration: underline; }
   .footer .footernav2 {
     float: right; }
     .footer .footernav2 li {
       list-style-type: none;
-      display: inline-block; }
+      display: inline-block;
+      font-size: 14px;
+      padding: 5px; }
       .footer .footernav2 li a {
         padding: 10px;
         display: block;
         text-decoration: none;
-        color: #222; }
+        color: #736c6c; }
+        .footer .footernav2 li a:hover {
+          text-decoration: underline; }
