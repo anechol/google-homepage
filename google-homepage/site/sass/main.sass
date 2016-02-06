@@ -1,3 +1,12 @@
+=list-item
+   list-style-type: none
+   display: inline-block
+
+=a-style
+   padding: 10px
+   display: block
+   text-decoration: none
+
 html, body
    margin: 0
    padding: 0
@@ -5,18 +14,51 @@ html, body
 .navbar
    float: right
    li
-      list-style-type: none
-      display: inline-block
+      +list-item
       a
-         padding: 5px
-         display: block
-         text-decoration: none
+         +a-style
          color: #222
 
 .centerpage
-   text-align: center
+   clear: both
+   margin: auto
    position: relative
-   top: 200px
+   top: 150px
+   text-align: center
    img
-      display: inline-block
-      margin: 0 auto
+      display: block
+      margin: auto
+   .inputbox
+      width: 550px
+      height: 35px
+      border: 2px solid #F4F4F4
+   button
+      width: 150px
+      height: 30px
+      color: #666666
+      font-weight: 700
+      background-color: #F4F4F4
+      border: 1px solid #F4F4F4
+
+.footer
+   position: absolute
+   right: 0
+   bottom: 0
+   left: 0
+   color: #757575
+   background-color: #F4F4F4
+   .footernav
+      float: left
+      li
+         +list-item
+         padding: 5px
+         a
+            +a-style
+            color: #222
+   .footernav2
+      float: right
+      li
+         +list-item
+         a
+            +a-style
+            color: #222

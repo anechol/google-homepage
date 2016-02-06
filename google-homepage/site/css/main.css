@@ -8,15 +8,57 @@ html, body {
     list-style-type: none;
     display: inline-block; }
     .navbar li a {
-      padding: 5px;
+      padding: 10px;
       display: block;
       text-decoration: none;
       color: #222; }
 
 .centerpage {
-  text-align: center;
+  clear: both;
+  margin: auto;
   position: relative;
-  top: 200px; }
+  top: 150px;
+  text-align: center; }
   .centerpage img {
-    display: inline-block;
-    margin: 0 auto; }
+    display: block;
+    margin: auto; }
+  .centerpage .inputbox {
+    width: 550px;
+    height: 35px;
+    border: 2px solid #F4F4F4; }
+  .centerpage button {
+    width: 150px;
+    height: 30px;
+    color: #666666;
+    font-weight: 700;
+    background-color: #F4F4F4;
+    border: 1px solid #F4F4F4; }
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #757575;
+  background-color: #F4F4F4; }
+  .footer .footernav {
+    float: left; }
+    .footer .footernav li {
+      list-style-type: none;
+      display: inline-block;
+      padding: 5px; }
+      .footer .footernav li a {
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+        color: #222; }
+  .footer .footernav2 {
+    float: right; }
+    .footer .footernav2 li {
+      list-style-type: none;
+      display: inline-block; }
+      .footer .footernav2 li a {
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+        color: #222; }
