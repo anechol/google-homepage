@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Arimo)
+
+=list-item
+   list-style-type: none
+   display: inline-block
+   font-size: 14px
+
+=a-style
+   padding: 10px
+   display: block
+   text-decoration: none
+
+
+html, body
+   margin: 0
+   padding: 0
+
+body
+   font-family: 'Arimo', sans-serif
+
+.navbar
+   float: right
+   margin: 10px
+   li
+      +list-item
+      img
+         vertical-align: middle
+         width: 20px
+         height: 20px
+      a
+         +a-style
+         font-size: 14px
+         color: #222
+         &:hover
+            text-decoration: underline
+
+
+.centerpage
+   clear: both
+   margin: auto
+   position: relative
+   top: 140px
+   text-align: center
+   img
+      display: block
+      margin: auto
+   .inputbox
+      padding: 10px
+      width: 575px
+      height: 40px
+      border: 1px solid #e9e1e1
+      &:hover
+         border-color: #afaeae
+      &:focus
+         border-color: #4D90FE
+   button
+      width: 140px
+      height: 35px
+      margin: 5px
+      font-size: 14px
+      color: #666666
+      background-color: #F2F2F2
+      border: 1px solid #F2F2F2
+      &:hover
+         color: #000
+         border: .2px solid #d5cdcd
+         box-shadow: 0 1px 5px #d5cdcd
+
+.footer
+   position: absolute
+   right: 0
+   bottom: 0
+   left: 0
+   background-color: #F4F4F4
+   border-top: 1px solid #E4E4E4
+   .footernav
+      float: left
+      li
+         +list-item
+         padding: 5px 10px
+         a
+            +a-style
+            color: #736c6c
+            &:hover
+               text-decoration: underline
+   .footernav2
+      float: right
+      li
+         +list-item
+         padding: 5px
+         a
+            +a-style
+            color: #736c6c
+            &:hover
+               text-decoration: underline
